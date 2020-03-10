@@ -1,4 +1,4 @@
-# 初回デプロイ方法
+## 初回デプロイ方法
 1. git コマンドで当リポジトリを clone する
 ```
 $ git clone https://github.com/lindamanf/convini.git
@@ -18,17 +18,18 @@ $ docker-compose run web ./manage.py migrate
 http://127.0.0.1:8000/admin
 ```
 
-# 管理サイトのスーパーユーザー作成
+## 管理サイトのスーパーユーザー作成
 1. web serverコンテナへ入る
 ```
 $ docker exec -it convini.web bash
+```
 2. 8080ポートでアクセスできるようにコマンドを実行
 ```
 /code# ./manage.py createsuperuser
 ```
 あとはダイアログにしたがって回答するのみ。
 
-# Debug モードの利用方法
+## Debug モードの利用方法
 1. web serverコンテナへ入る
 ```
 $ docker exec -it convini.web bash
